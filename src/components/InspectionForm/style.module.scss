@@ -1,0 +1,131 @@
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fieldRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fileSection {
+  flex: 0 0 120px;
+}
+
+.preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.fileInput {
+  width: 100%;
+}
+
+.inputSection {
+  flex: 1;
+}
+
+.textInput {
+  width: 90%;
+}
+
+.removeButtonSection {
+  flex: 0 0 auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.imageList {
+  margin-top: 2rem;
+}
+
+.imageListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.imageItem {
+  text-align: center;
+  img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+.message {
+  text-align: center;
+  color: #666;
+}
+
+.fileInputWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.fileInput {
+  display: none; // Hide the default file input
+}
+
+.fileInputLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #488aec;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.fileInputLabel:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+.fileInputLabel:focus,
+.fileInputLabel:active {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
+}
